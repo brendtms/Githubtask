@@ -8,13 +8,11 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <h1>SMCC-CCIS Week 2026 - Campus Event Showcase &#127891;&#127881;</h1>
         <p>Celebrating innovation, technology, and collaboration across the campus.</p>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <a href="#overview">Overview</a>
         <a href="#schedule">Schedule</a>
@@ -26,14 +24,12 @@
 
     <div class="container">
 
-        <!-- Event Overview -->
         <section id="overview" class="card">
             <h2>Event Overview</h2>
             <p>Welcome to SMCC-CCIS Week 2026! This annual event brings together students, faculty, and tech enthusiasts to celebrate innovation, showcase projects, and foster collaboration within the College of Computing and Information Sciences. Join us for five days of exciting activities, competitions, and learning opportunities.</p>
             <img src="images (7).jpeg" alt="SMCC-CCIS Week 2026 Banner">
         </section>
 
-        <!-- Event Schedule -->
         <section id="schedule" class="card">
             <h2>Event Schedule</h2>
             <p>Here is the simplified Schedule of activities</p>
@@ -46,7 +42,6 @@
             </ul>
         </section>
 
-        <!-- Event Location and Map -->
         <section id="location" class="card">
             <h2>2. Event Location and Map</h2>
             <p>All events will be held at the <strong>SMCC Main Campus - IT Building</strong> &lt;iframe&gt;. The iframe uses a relative width percentage to help responsiveness.</p>
@@ -60,7 +55,6 @@
             </div>
         </section>
 
-        <!-- Event Registration Form -->
         <section id="registration" class="card">
             <h2>Event Registration Form</h2>
             <p>Please Complete the form below to register for SMCC-CCIS Week 2026.</p>
@@ -150,7 +144,6 @@
             </form>
         </section>
 
-        <!-- FAQ Section -->
         <section id="faq" class="card">
             <h2>Frequently Asked Questions (FAQ)</h2>
             <button class="toggle-btn" onclick="toggleFAQ()">Toggle FAQ Visibility</button>
@@ -178,7 +171,6 @@
             </div>
         </section>
 
-        <!-- Tech Demo Section -->
         <section id="tech-demo" class="card">
             <h2>Tech Demo Section</h2>
             <p>Below is a sample code snippet demonstrating a simple JavaScript function:</p>
@@ -189,9 +181,8 @@
     return "Hello, " + name + " &#128075;";
 }
 
-// Call the function
 <samp>greetParticipant("CCIS Student");</samp>
-// Output: <samp>Hello, CCIS Student &#128075;</samp></code></pre>
+<samp>Hello, CCIS Student &#128075;</samp></code></pre>
             </div>
 
             <p>Keyboard shortcut to open console: Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> (Windows/Linux) or <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>J</kbd> (Mac).</p>
@@ -225,7 +216,6 @@
 
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Saint Michael College of Caraga. All rights reserved.</p>
         <p>Atupan St., Brgy. 4, Nasipit, Agusan del Norte 8602, Philippines</p>
@@ -234,13 +224,11 @@
     </footer>
 
     <script>
-        // FAQ Toggle Function
         function toggleFAQ() {
             const faqContent = document.getElementById('faq-content');
             faqContent.classList.toggle('active');
         }
 
-        // Form Validation Enhancement
         document.getElementById('registration-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -248,7 +236,6 @@
             const email = document.getElementById('email').value;
             const studentId = document.getElementById('student-id').value;
             
-            // Basic validation
             if (fullname.length < 3) {
                 alert('Full name must be at least 3 characters long.');
                 return false;
@@ -264,10 +251,8 @@
                 return false;
             }
             
-            // Success message
             alert('Registration submitted successfully! 🎉\\nThank you for registering for SMCC-CCIS Week 2026.');
             
-            // In a real application, you would send data to a server here
             console.log('Form submitted:', {
                 fullname: fullname,
                 email: email,
@@ -277,7 +262,6 @@
             return true;
         });
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
